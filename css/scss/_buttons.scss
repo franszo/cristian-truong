@@ -1,0 +1,53 @@
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+
+.cta {
+	padding: 5rem 2rem;
+	text-align: center;
+	@include clearfix;
+}
+
+.button {
+	color: #FFF;
+	text-align: center;
+	@include opensans;
+	@include fs(14);
+    padding: 1rem 7rem;
+	@include inline-block;
+	vertical-align: middle;
+	background: $pink;
+	margin-top: 30px;
+	border: none;
+
+	@include dw(5) {
+		width: 100%;
+	}
+
+	&:hover {
+		color: #FFF;
+	}
+
+	&.alt {
+		background: $pink;
+		color: #FFF;
+
+		&:hover {
+			background: transparent;
+			color: #FFF;
+			border: 1px solid #FFF;
+		}
+	}
+
+	&.white {
+		border: 1px solid #FFF;
+		background: transparent;
+		color: #FFF;	
+
+		&:hover {
+			background: $pink;
+			color: #FFF;
+			border: 1px solid $pink;			
+		}	
+	}
+}

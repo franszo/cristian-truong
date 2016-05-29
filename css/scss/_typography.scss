@@ -1,0 +1,183 @@
+
+a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+	@include transition(all 0.3s ease);
+	&:hover {
+		color: $dark-blue;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	line-height: 1.2;
+	color: #000;
+	font-weight: normal;
+}
+
+h1 {
+	@include fs(60);
+
+	@include dw(12) {
+		@include fs(56);	
+	}
+
+	@include dw(10) {
+		@include fs(52);	
+	}
+
+	@include dw(8) {
+		@include fs(48);	
+	}
+
+	@include dw(6) {
+		@include fs(45);	
+	}
+
+	@include dw(5) {
+		@include fs(35);	
+	}	
+}
+
+h2 {
+	@include fs(35);
+	color: #333333;
+
+	@include dw(12) {
+		@include fs(33);	
+	}
+
+	@include dw(10) {
+		@include fs(30);	
+	}
+
+	@include dw(8) {
+		@include fs(28);	
+	}
+
+	@include dw(6) {
+		@include fs(25);	
+	}
+}
+
+h3 {
+	@include fs(40);
+
+	@include dw(12) {
+		@include fs(36);	
+	}
+
+	@include dw(10) {
+		@include fs(32);	
+	}
+
+	@include dw(8) {
+		@include fs(28);	
+	}
+
+	@include dw(6) {
+		@include fs(25);	
+	}
+
+}
+
+h4 {
+	@include fs(22);
+
+	@include dw(8) {
+		@include fs(24);	
+	}
+
+	@include dw(6) {
+		@include fs(20);	
+	}
+}
+
+h5 {
+	@include fs(25);
+
+	@include dw(12) {
+		@include fs(22);	
+	}
+
+	@include dw(10) {
+		@include fs(18);	
+	}
+
+	@include dw(8) {
+		@include fs(14);	
+	}
+}
+
+h6 {
+	@include fs(18);
+
+	@include dw(12) {
+		@include fs(16);	
+	}
+
+	@include dw(10) {
+		@include fs(14);	
+	}
+
+	@include dw(8) {
+		@include fs(12);	
+	}
+}
+
+p {
+	margin: 0 0 15px 0;
+}
+
+.bold,
+strong,
+b {
+	font-weight: bold;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.align-left,
+.text-left {
+	text-align: left;
+}
+
+.align-right,
+.text-right {
+	text-align: right;
+}
+
+.align-center,
+.text-center {
+	text-align:  center;
+}
+
+.align-middle,
+.text-middle {
+	vertical-align: middle;
+}
+
+.normal-style {
+	font-style: normal;	
+}
+
+.underline {
+	text-decoration: underline;	
+}
+
+.uppercase {
+	color: #000;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+em {
+
+}

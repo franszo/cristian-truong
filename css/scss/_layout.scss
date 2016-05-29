@@ -1,0 +1,106 @@
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	line-height: 1.5;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	@include opensans;
+}
+
+#tortilla {
+	background: #FFF;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+.header-container {
+	@include clearfix;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(9, 20, 46, 0.5);
+	@include transform(translateZ(0));
+
+	.wrapper {
+		@include clearfix;
+	    padding: 0.8rem 5%;
+		max-width: 1680px;
+		margin: 0 auto;
+	}
+
+	nav.main {
+		width: 100%;
+		text-align: right;			
+
+		@include dw(640) {
+			margin-top: 0;
+		}
+
+		ul {
+			display: block;
+			padding-top: 2px;
+
+			@include dw(7) {
+				display: none;
+			}			
+
+			li {
+				@include inline-block;
+				margin: 0 14px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}				
+
+				a {
+					@include opensans;
+					@include fs(14);
+					color: #FFF;
+					position: relative;
+
+					@include dw(8) {
+						@include fs(12);
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						width: 0;
+						height: 1px;
+						background: #FFF;
+						@include transition(all .5s ease);
+					}					
+
+					&.active, &:hover {
+						&:after {
+							width: 100%;
+						}
+					}
+
+					&.logo {
+						&:after {
+							display: none;
+						}
+					}
+
+				}
+			}
+		} 
+	}
+}
+
+.main-container {
+	position: relative;
+    margin: 0 auto 5rem;
+}

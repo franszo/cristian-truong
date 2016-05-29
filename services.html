@@ -1,0 +1,256 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Christian Truong - UX & UI Designer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/plugins/slideout.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <script src="js/plugins/jquery.inview.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/hov3r.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body id="services">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="header-container">
+        <header class="wrapper">
+            <nav class="main">
+                <a href="/" class="logo">
+                    <span class="flippety">
+                                <img src="images/icons/logo.svg" alt="">
+                            </span>
+                    <span class="flop">
+                                <img src="images/icons/logo.svg" alt="">
+                            </span>
+                </a>
+                <ul>
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/processus.html">Processus</a></li>
+                    <li><a class="active" href="/services.html">Services</a></li>
+                    <li><a href="/apropos.html">À propos</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a id="hamburger-icon" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </a>
+        </header>
+    </div>
+    <div id="navbar-main" class="sidr">
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/processus.html">Processus</a></li>
+            <li class="active"><a href="/services.html">Services</a></li>
+            <li><a href="/apropos.html">À propos</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="tortilla">
+        <header id="header" class="dark">
+            <div class="inner">
+                <h1 class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2">Nous sommes <b>Curieux</b></h1>
+                <h2 class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2">À l’affut de nouvelles tendances, nous essayons de nous tenir à jour, afin de vous proposer des services de qualité.</h2>
+                <a href="processus.html" class="button hvr-grow">NOTRE PROCESSUS</a>
+            </div>
+        </header>
+        <!-- Main -->
+        <div class="main-container">
+            <div class="showoff container">
+                <img src="images/backgrounds/showoff-bg.jpg" alt="" class="top">
+                <div class="wrapper">
+                    <div class="besoin">
+                        <div class="span six">
+                            <h2 class="section-title os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2">BESOIN D’UN <b>DEVIS ?</b></b></h2>
+                            <form id="contact" name="contact" method="post">
+                                <fieldset>
+                                    <div>
+                                        <div class="name os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2">
+                                            <label for="name">Votre nom :</label>
+                                            <input type="text" name="name" id="name" size="30" value="" required />
+                                        </div>
+                                        <div class="email os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2">
+                                            <label for="email">Votre adresse email :</label>
+                                            <input type="text" name="email" id="email" size="30" value="" required />
+                                        </div>
+                                        <div class="phone os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2">
+                                            <label for="subject">Sujet de votre demande :</label>
+                                            <input type="text" name="subject" id="subject" size="30" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2">
+                                        <label for="message">Votre message ci-dessous :</label>
+                                        <textarea name="message" id="message" required></textarea>
+                                    </div>
+                                    <button id="submit" class="button hvr-grow" type="submit" name="submit">ENVOYER</button>
+                                </fieldset>
+                            </form>
+                            <div id="success">
+                                <span>
+                                    <p>Your message was sent succssfully! I will be in touch as soon as I can.</p>
+                                  </span>
+                            </div>
+                            <div id="error">
+                                <span>
+                                    <p>Something went wrong, try refreshing and submitting the form again.</p>
+                                  </span>
+                            </div>
+
+                        </div>
+                        <div class="span four">
+                            <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2">
+                                <h3>Singlepage</h3>
+                                <p>Page unique, parfaite pour présenter son agence, organisation, produit ou même un service dans un Design propre et moderne.</p>
+                                <span>À partir de 500 €</span>
+                            </section>
+                            <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2">
+                                <h3>Multipage  </h3>
+                                <p>Site qui consiste à permettre à l’utilisateur de naviguer entre plusieures pages. Parfait pour un contenu plus important.</p>
+                                <span>À partir de 1200 €</span>
+                            </section>
+                            <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2">
+                                <h3>Print ou autre ?</h3>
+                                <p>Besoin d’un travail editorial, d’identité ou autre ? Contactez moi pour plus d’info.</p>
+                                <a href="contact.html">Contact</span>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>        
+
+        </div>
+        <!-- //End Main -->
+            <div id="question">
+                <div class="span right five">
+                    <div class="inner">
+                        <h2 class="section-title os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0">UNE <b>QUESTION</b> ?</h2>
+                        <h3 class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0">Je suis à votre disposition !</h3>
+                        <p class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0">Quels que soient vos besoins en matière de création graphique ou simplement pour discuter autour d’un café, n’hésitez pas.</p>
+                        <a href="contact.html" class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0">Contact</a>
+                    </div>
+                </div>
+            </div>
+        <div id="footer">
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/PKPN-1816881881874083/timeline" target="_blank" class="hvr-grow">
+                        <img src="images/icons/facebook.jpg" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://uk.linkedin.com/in/christian-truong-40ba0683" target="_blank" class="hvr-grow">
+                        <img src="images/icons/linkedin.jpg" alt="linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Chris_PKPN" target="_blank" class="hvr-grow">
+                        <img src="images/icons/twitter.jpg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/PKPN-1816881881874083/timeline" target="_blank" class="hvr-grow">
+                        <img src="images/icons/pinterest.jpg" alt="pinterest">
+                    </a>
+                </li>
+            </ul>
+            <ul class="foot-nav">
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/processus.html">Processus</a></li>
+                <li><a class="active" href="/services.html">Services</a></li>
+                <li><a href="/apropos.html">À propos</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <span class="copyright">&copy; Copyright Studio PKPN</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+    jQuery.validator.addMethod('answercheck', function(value, element) {
+        return this.optional(element) || /^\bcat\b$/.test(value);
+    }, "type the correct answer -_-");
+
+    // validate contact form
+    $(function() {
+        $('#contact').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true,
+                    minlength: 50
+                }
+            },
+            messages: {
+                name: {
+                    required: "Oups, il semblerait qu’il manque quelque chose !"
+                },
+                email: {
+                    required: "Oups, il semblerait qu’il manque quelque chose !"
+                },
+                message: {
+                    required: "Oups, il semblerait qu’il manque quelque chose !",
+                    minlength: "thats all? really?"
+                }
+            },
+            submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    type: "POST",
+                    data: $(form).serialize(),
+                    url: "process.php",
+                    success: function() {
+                        $('#contact :input').attr('disabled', 'disabled');
+                        $('#contact').fadeTo("slow", 0.15, function() {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor', 'default');
+                            $('#success').fadeIn();
+                        });
+                    },
+                    error: function() {
+                        $('#contact').fadeTo("slow", 0.15, function() {
+                            $('#error').fadeIn();
+                        });
+                    }
+                });
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
